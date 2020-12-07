@@ -61,3 +61,51 @@ $calendar_2018 = [
 // 12月を表示する
 echo $calendar_2018["December"];
 echo "\n";
+
+// 課題1
+$name = "吉田昌平";
+
+// もし $name が 吉田昌平 なら「私は あなたの名前 です」と表記
+//  もしそれ意外なら「あなたの名前ではありません」と表記
+if ($name = "吉田昌平") {
+    echo "私は 吉田昌平 です";
+} else {
+    echo "あなたの名前ではありません";
+}
+echo "\n";
+
+// 課題2
+$total = 0;
+echo $total;
+// => 0 と表示される
+
+// $iが0から始まり、$iが10,000以下の間繰り返し処理を行う。
+for ($i = 0; $i <= 10000; $i++) {
+ $total += $i;
+}
+echo $total;
+// 1~10000までの合計値が表示される。
+echo "\n";
+
+// 課題3
+$fluits = array("apple", "banana", "peach", "blueberry", "orange");
+// $fluits から一つずつ要素を取り出し、$fluitsに代入。
+
+foreach($fluits as $fluits){
+    echo $fluits;
+    echo "\n";
+}
+
+// 課題4
+/* for文の始めの値を定義する */
+$start = 1;
+/* for文の終わりの値を定義する */
+$end = 100;
+
+for ($i = $start; $i <= $end; $i++) {
+
+  // 5で割り切れたら{}内を実行する
+  if ($i / 5 == 0) {
+    echo $i;
+  }
+}
